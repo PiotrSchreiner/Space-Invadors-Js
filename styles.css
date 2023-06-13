@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: purple;
+  margin-left: 36%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  background-image: url("Pictures/background2.jpg");
+  background-size: cover;
+}
+
+.grid {
+  margin-top: 60px;
+  width: 450px;
+  height: 450px;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("Pictures/background.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  transform: scale(1.1);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.1);
+}
+
+.invader {
+  background-image: url("Pictures/Invader.png");
+  background-size: cover;
+}
+
+.shooter {
+  background-image: url("Pictures/shooter.png");
+  background-size: cover;
+}
+
+.laser {
+  background-image: url("Pictures/laser.png");
+  background-size: cover;
+}
+
+.boom {
+  background-image: url("Pictures/boom.png");
+  background-size: cover;
+}
+
+.logo {
+  background-image: url("Pictures/Logo.png");
+  height: 80px;
+  width: 300px;
+  background-repeat: no-repeat;
+  animation: logo-appear 4s;
+  animation-fill-mode: forwards;
+  margin-left: 7%;
+}
+
+@keyframes logo-appear {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 1;
+  }
+}
+
+.ufo {
+  background-image: url("Pictures/ufo.png");
+  height: 300px;
+  width: 600px;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  animation: ufo-appear 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ufo-appear {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
